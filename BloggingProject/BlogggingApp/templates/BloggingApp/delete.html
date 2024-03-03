@@ -1,0 +1,8 @@
+<h2> Delete Blog Post</h2>
+<p> Are you sure you want to delete {{product.name}}"?</p>
+
+<form method = "post">
+    {%csrf_token%}
+    {{from.as_p}}
+    <button type=" submit">Yes,Delete</button>
+</form>
